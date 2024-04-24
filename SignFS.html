@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>SignFS</title>
+		<script src="signfs.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="signfs.css">
+	</head>
+	<body>
+		<div id="main">
+			<button class="openbtn" onclick="openNav()">&#9776;</button>
+		</div> 
+		<h1 id="header">Learn Fingerspelling!</h1> 
+	    <div id="mySidebar" class="sidebar">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="Guide.html">Guide</a>
+			<a href="Modules.html">Modules</a>
+			<a href="SignFS.html">Finger-<br>spelling</a>
+		</div>
+		<br><br>
+		<input type="text" id="userAnswer" placeholder="Type a word...">		<button id="enter" onclick="enter()">Enter</button>
+		<br>
+		<h3>Here's the fingerspelling for:<p id=enter></p></h3>
+		<br>
+		<button id="again" onclick="again()">Repeat</button>
+		<div class="sign">
+			<img src="signfs/bg" class="flash" id="alphaloop"> 
+		</div>
+		<div class="descr">
+			<p>Take note of:</p>
+			<ul>
+				<li>Signing letter "j": make the sign for "i", then rotate your wrist, so that the upward extended pinky finger draws a curve in the air and ends with the pinky pointing in the opposite direction and the palm towards you.</li>
+				<br>
+				<li>Signing letter "z": start by pointing your index finger out, then tracing the written letter "z" in the air by doing a zigzag motion.</li>
+				<br>
+				<li>Signing double letters ("green", "happy"): make the first sign, then shift it to the side to indicate the second occurence of the letter.</li>
+				<br>
+				<li>Double "z" sign: rather than trace it in the air twice, use two fingers (the index and the middle finger) to trace "z" in the air.</li> 
+				<li>The sign for "k" and "p" are the same, only "k" is upturned and "p" is downturned. The same applies to the signs for "g" and "q".</li>
+			</ul>
+		</div>
+	</body>
+	<script type="text/javascript">
+		display();
+	</script>
+</html>
